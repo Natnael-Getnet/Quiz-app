@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './qiuz.dart';
+import './quiz.dart';
 import './result.dart';
-import 'questionlibrary.dart';
+import 'questionLibrary.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
           appBar: AppBar(title: const Text('My first application')),
           body: _questionIndex < questions.length
-              ? Qiuz(questions, _questionIndex, _answerQuestion)
+              ? Quiz(questions, _questionIndex, _answerQuestion)
               : Result(_totalResult, _reset)),
     );
   }
