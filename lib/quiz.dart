@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import './question.dart';
 import './answer.dart';
 
-class Qiuz extends StatelessWidget {
+class Quiz extends StatelessWidget {
   final List<Map<String, Object>> questions;
   final int questionIndex;
-  Function answerQuestion;
+  final Function answerQuestion;
 
-  Qiuz(this.questions, this.questionIndex, this.answerQuestion, {super.key});
+  const Quiz(this.questions, this.questionIndex, this.answerQuestion, {super.key});
 
   @override
   Widget build(BuildContext context) {
